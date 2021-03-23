@@ -1,1 +1,1 @@
-# django_local_library
+# blog_shb_project
