@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+    {% block title %}
+    Blogs
+    {% endblock %}
+
+    {% block content %}
+    
+    <div class="container mb-24" >
+
+      <div class="row justify-content-md-center">
+
+      <div class="col-md-8 pt-5" >
+
+      {% for post in posts %}
+        <div class="col-12"><h1> {{post.title}} </h1><a class="text-dark" href="{{post.get_absolute_url}}">көбүрөөк окуу...</a>  </div>
+
+      {% endfor %}
+
+      </div>
+
+      </div>
+
+      </div>
+
+
+
+    {% endblock %}

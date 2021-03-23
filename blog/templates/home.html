@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    BlogShB
+    {% endblock %}
+</head>
+
+{% block content %}
+<style>
+.fakeimg {
+  height: 250px;
+  background: #aaa;
+  border-radius: 50%;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	margin-bottom: 15px;
+}
+ .fa {
+	text-align: center;
+    text-decoration: none;
+	color: white;
+}
+.fa:hover {
+	opacity: 0.9;
+}
+.fa-facebook {
+  background: #3B5998;
+}
+.fa-youtube {
+	background: #bb0000;
+}
+.fa-instagram {
+  background: #E1306C;
+}
+.fa-github {
+	background: #000000;
+}
+</style>
+<body>
+     <div >
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+          <div class="jumbotron">
+              <h1 class="display-4 ">Кош келдиңиз...</h1>
+              <p class="lead">Биз программалоо дүйнөсүнө кадам таштап жаткандар үчүн жана өзүн ар тараптан өнүктүрүүнү каалагандар үчүн жардам кылуу максаты менен  блогдорду жасайбыз.</p>
+              <hr class="my-4" />
+              <p>Блогдорду көрүү үчүн төмөнкү баскычка басыңыз: </p>
+              <a class="btn btn-primary btn-lg" href="/blogs" role="button" >БАШТОО</a>
+          </div>
+          </div>
+          <div class="col-sm-4">
+              <h2>Биз жөнүндө:</h2>
+            <div >
+                <img src="{% static 'mysite/images/mylogo.jpg' %}" alt="mylogo" class="fakeimg"></div>
+
+            <p>   Салам, сиз бул сайттан программалоого байланыштуу маалыматтарды таба аласыз. </br>Төмөнкү линктер аркылуу соц. тармактардан</br> мага каттала аласыз...</p>
+            <h3>Линктер :</h3>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="https://www.instagram.com/shumkar_barpyev/" class="fa fa-instagram m-4" ></a></li>
+              <li><a href="https://www.youtube.com/channel/UCU9J5KQKrfoPtyYff9c3jFw" class="fa fa-youtube m-4"></a></li>
+              <li><a href="https://www.facebook.com/profile.php?id=100010512525047" class="fa fa-facebook m-4"></a></li>
+              <li><a href="https://github.com/shumkar-barpiev/" class="fa fa-github m-4"></a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+</body>
+{% endblock %}
+</html>

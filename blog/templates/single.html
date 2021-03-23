@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{post.title}}
+{% endblock %}
+
+{% block content %}
+    
+      <div class="container">
+            КАТЕГОРИЯ: <h1>{{post.category}}</h1>
+        <div class="row justify-content-md-center pt-5">
+  
+        <div class="col-md-8">
+        
+          <div class="col-12"><h1>{{post.title}}</h1></div>
+          <div class="col-12"><p>{{post.content|safe}}</p></div>
+  
+        </div>
+  
+        </div>
+            <a class="btn btn-primary btn-lg" href="/blogs" role="button" >Артка...</a>
+      </div>
+
+
+{% endblock %}
